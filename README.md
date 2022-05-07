@@ -1,15 +1,5 @@
 
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        body {
-            background: #1a1a1a;
-            font-family: 'Press Start 2P', cursive;
-            color: #dddddd;
-            margin: 2vh;
-            padding: 1vh;
-        }
-    </style>
 
 
 # < --- Quick Env Setup --- >
