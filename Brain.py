@@ -1,9 +1,8 @@
 """ ---Importing Modules--- """
 import os  # For directory changing
 
+
 """ ---Setting Class For Executing The Programs--- """
-
-
 class Run_App:  # Class for running the app
     def __int__(self, path, file):  # Constructor
         self.path = path  # Setting the path
