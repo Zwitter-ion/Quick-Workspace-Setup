@@ -1,7 +1,29 @@
-<BakeRecipes>:
-    name: 'bkrecipes'
+<Main>:
+
+    
     BoxLayout:
-        orientation: 'vertical'
-        cols:1
         size: root.width, root.height
-        id:grid
+        cols: 1
+        spacing: 10
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'vertical'
+            cols:1
+            size: root.width, root.height
+            spacing: 5
+            padding: 5
+            size_hint: .9, 1
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            id:grid
+
+            
+        BoxLayout:
+            orientation: 'horizontal'
+            size: root.width, root.height
+            cols:1
+            id:add
+            spacing: 5
+            padding: 10
+            size_hint: .5, .2
+            pos_hint: {'center_x': .5, 'center_y': .5}
