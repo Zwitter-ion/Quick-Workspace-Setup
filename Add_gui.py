@@ -51,10 +51,13 @@ class add(Widget):
         self.ids.grid.add_widget(Button(text='Save', on_press= lambda x: self.save_to_file()))
 
     def save_to_file(self):
-        mode_name = self.mode_name.text
-        with open('Mode_list.qes', 'a') as file:
+        with open('Data//Mode_list.qes', 'a') as file:
+            mode_name = self.mode_name.text
             file.write(f'{mode_name}\n')
             print('added name')
+        with open(f'Data//{mode_name}.qes', 'a') as data_file:
+            for items in self.data_list:
+                data_file.write(f'{items}\n')
         
         exit()
 

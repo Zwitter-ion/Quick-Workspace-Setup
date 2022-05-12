@@ -30,6 +30,7 @@ class Main(Widget):
 
     def add_mode(self):
         os.system('Add_gui.py')
+        exit()
 
 class Quick_Env_Setup(App):
     def build(self):
