@@ -1,9 +1,12 @@
+from operator import mod
 from Add import add_mode
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.lang import Builder
 from kivy.uix.label import Label
+from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivy.properties import ObjectProperty
 
 Builder.load_file('Add_gui.kv')
 
@@ -14,6 +17,7 @@ class add(Widget):
         self.data_list = []
 
     def press_add_mode(self):
+        
         
 
         Add_mode = add_mode()
@@ -37,8 +41,23 @@ class add(Widget):
     def save_data(self):
         
         self.ids.grid.clear_widgets()
+
         self.ids.grid.add_widget(Label(text='Enter a name for the mode', color=[0.41, 0.42, 0.74, 1]))
-        self.ids.grid.add_widget(TextInput(text = 'Enter Name Here',multiline=False, size_hint=(1, .1), pos_hint={'center_x': .5, 'center_y': .5}))
+
+        self.mode_name = TextInput(text = 'Enter Name Here', multiline=False, size_hint=(1, .1), pos_hint={'center_x': .5, 'center_y': .5})
+
+        self.ids.grid.add_widget(self.mode_name)
+
+        self.ids.grid.add_widget(Button(text='Save', on_press= lambda x: self.save_to_file()))
+
+    def save_to_file(self):
+        mode_name = self.mode_name.text
+        with open('Mode_list.qes', 'a') as file:
+            file.write(f'{mode_name}\n')
+            print('added name')
+        
+        exit()
+
 
 
 class Add_Mode(App):
