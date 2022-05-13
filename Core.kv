@@ -16,7 +16,12 @@
             size_hint: .9, 1
             pos_hint: {'center_x': .5, 'center_y': .5}
             id:grid
-
+            Label:
+                text: 'Quick Workspace Setup'
+                font_size: 30
+                color: [0.41, 0.42, 0.74, 1]
+                font_name: 'Comic'
+                size_hint: 1, .85
             
         BoxLayout:
             orientation: 'horizontal'
@@ -32,6 +37,6 @@
                 on_press: root.add_mode()
                 background_normal: ''
                 background_color: [200,200,200,1]
-                color: '##2E4053'
+                color: [0.41, 0.42, 0.74, 1]
                 font_name: "Comic"
                 font_size: 20

@@ -14,14 +14,12 @@ class Main(Widget):
 
 
         try:
-
-
             with open('Data\\Mode_list.qes', 'r') as modes:
                 self.modes = modes.read().splitlines()
 
                 for items in self.modes:  # assuming you need to create 5 buttons
                     self.button = Button(text=str(
-                        items), background_color=(200, 200, 200, 1), background_normal='', color='##2E4053', font_name= "Comic", font_size= 20)  # the text on the button
+                        items), background_color=(200, 200, 200, 1), background_normal='', font_name="Comic", font_size=20, color=[0.41, 0.42, 0.74, 1])  # the text on the button
                     self.button.bind(on_press= lambda x: Start_App().verify_data_files(items)) #when the button is clicked
                     self.ids.grid.add_widget(self.button)  # added to the grid
             
@@ -32,10 +30,10 @@ class Main(Widget):
         os.system('Add_gui.py')
         exit()
 
-class Quick_Env_Setup(App):
+class Quick_Workspace_Setup(App):
     def build(self):
         return Main()
 
 
 if __name__ == '__main__':
-    Quick_Env_Setup().run()
+    Quick_Workspace_Setup().run()

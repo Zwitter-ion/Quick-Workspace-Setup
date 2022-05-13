@@ -1,4 +1,5 @@
 from operator import mod
+from re import I
 from Add import add_mode
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -6,7 +7,7 @@ from kivy.lang import Builder
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
-from kivy.properties import ObjectProperty
+import os
 
 Builder.load_file('Add_gui.kv')
 
@@ -27,8 +28,8 @@ class add(Widget):
 
 
         self.data = f'{self.path} | {self.file}'
-        self.file_text = Label(text=self.file, color=[0.41, 0.42, 0.74, 1])
-        self.path_text = Label(text=self.path, color=[0.41, 0.42, 0.74, 1])
+        self.file_text = Label(text=self.file, color=[0.41, 0.42, 0.74, 1], font_size=20, font_name='Comic')
+        self.path_text = Label(text=self.path, color=[0.41, 0.42, 0.74, 1], font_size=20, font_name='Comic')
         self.ids.grid.add_widget(self.path_text)
         self.ids.grid.add_widget(self.file_text)
         self.data_list.append(self.data)
@@ -41,14 +42,19 @@ class add(Widget):
     def save_data(self):
         
         self.ids.grid.clear_widgets()
+        self.ids.buttons.clear_widgets()
+        self.ids.title.clear_widgets()
+        self.ids.title.add_widget(Label(text='Add Mode Name', color=[0.41, 0.42, 0.74, 1], font_size= 30, font_name='Comic'))
 
-        self.ids.grid.add_widget(Label(text='Enter a name for the mode', color=[0.41, 0.42, 0.74, 1]))
+        self.ids.grid.add_widget(Label(text='Enter a name for the mode', color=[0.41, 0.42, 0.74, 1], font_size=20, font_name='Comic'))
 
         self.mode_name = TextInput(text = 'Enter Name Here', multiline=False, size_hint=(1, .1), pos_hint={'center_x': .5, 'center_y': .5})
 
         self.ids.grid.add_widget(self.mode_name)
 
-        self.ids.grid.add_widget(Button(text='Save', on_press= lambda x: self.save_to_file()))
+        # self.ids.grid.add_widget(Button(text='Cancel', size_hint_x=1,font_name = 'Comic', background_normal = '', color = [0.41, 0.42, 0.74, 1], font_size= 20 ,on_press=lambda x: exit()))
+
+        self.ids.buttons.add_widget(Button(text='Save', size_hint_x = 1,font_name = 'Comic', background_normal = '', color = [0.41, 0.42, 0.74, 1], font_size= 20 ,on_press= lambda x: self.save_to_file()))
 
     def save_to_file(self):
         with open('Data//Mode_list.qes', 'a') as file:
@@ -58,6 +64,9 @@ class add(Widget):
         with open(f'Data//{mode_name}.qes', 'a') as data_file:
             for items in self.data_list:
                 data_file.write(f'{items}\n')
+
+
+        os.system('prompt_reopen.py')
         
         exit()
 
