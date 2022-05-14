@@ -3,6 +3,7 @@ from kivy.uix.widget import Widget
 from kivy.lang import Builder
 from kivy.uix.button import Button
 from Run import Start_App
+from kivy.config import Config
 import os
 
 Builder.load_file('Core.kv')
@@ -32,6 +33,7 @@ class Main(Widget):
 
 class Quick_Workspace_Setup(App):
     def build(self):
+        self.icon = 'Img\Logo.png'
         return Main()
 
 
