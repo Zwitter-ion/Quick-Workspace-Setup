@@ -74,6 +74,7 @@ class add(Widget):
 
 class Add_Mode(App):
     def build(self):
+        self.icon = 'Img\Icon.ico'
         return add()
 
 if __name__ == '__main__':

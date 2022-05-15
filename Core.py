@@ -33,7 +33,7 @@ class Main(Widget):
 
 class Quick_Workspace_Setup(App):
     def build(self):
-        self.icon = 'Img\Logo.png'
+        self.icon = 'Img\Icon.ico'
         return Main()
 
 
