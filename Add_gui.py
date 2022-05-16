@@ -52,7 +52,7 @@ class add(Widget):
 
         self.ids.grid.add_widget(self.mode_name)
 
-        # self.ids.grid.add_widget(Button(text='Cancel', size_hint_x=1,font_name = 'Comic', background_normal = '', color = [0.41, 0.42, 0.74, 1], font_size= 20 ,on_press=lambda x: exit()))
+        # self.ids.grid.add_widget(Button(text='Cancel', size_hint_x=1,font_name = 'Comic', background_normal = '', color = [0.41, 0.42, 0.74, 1], font_size= 20 ,on_press=lambda x: os._exit(0)))
 
         self.ids.buttons.add_widget(Button(text='Save', size_hint_x = 1,font_name = 'Comic', background_normal = '', color = [0.41, 0.42, 0.74, 1], font_size= 20 ,on_press= lambda x: self.save_to_file()))
 
@@ -68,7 +68,7 @@ class add(Widget):
 
         os.system('prompt_reopen.py')
         
-        exit()
+        os._exit(0)
 
 
 

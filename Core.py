@@ -29,7 +29,7 @@ class Main(Widget):
 
     def add_mode(self):
         os.system('Add_gui.py')
-        exit()
+        os._exit(0)
 
 class Quick_Workspace_Setup(App):
     def build(self):

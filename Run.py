@@ -22,7 +22,7 @@ class Start_App():  # Class for starting the app
 
             print("FILE DOESN'T EXIST!!!")  # Printing the message
 
-            # exit()  # Exiting the program
+            # os._exit(0)  # Exiting the program
 
         else:  # If the path exists
 
@@ -42,6 +42,6 @@ class Start_App():  # Class for starting the app
 
                     app.start_app()  # Running the app
 
-                exit()
+                os._exit(0)
 
 

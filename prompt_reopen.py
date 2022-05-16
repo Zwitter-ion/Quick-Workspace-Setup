@@ -30,7 +30,7 @@ class Main(Widget):
 
     def reopen(self):
 
-        exit()
+        os._exit(0)
 
 
 class Reopen(App):
