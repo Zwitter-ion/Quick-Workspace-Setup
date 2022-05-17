@@ -1,29 +1,23 @@
-from tkinter import filedialog
+""" ---Importing Modules--- """
+from tkinter import filedialog # For the file dialog
+from functools import cache # For the cache function
 
-class add_mode():
+""" ---Setting Class For Executing The Programs--- """
+class add_mode(): # The add mode class
     
-    def add_programs(self):
-
-        file_and_path = filedialog.askopenfilename()
-        self.file = file_and_path.split('/')[-1]
-        self.path = file_and_path.split(self.file)[0]
-        
+    @cache # Caching the function
     
-    def save_data(self):
+    def add_programs(self): # The add programs function
 
-        mode = 'hello'
-        data_file = f'Data\\{mode}.qes'
+        file_and_path = filedialog.askopenfilename() # Getting the file and path
 
-        with open('Data\\Mode_list.qes', 'a') as data_file:
-            data_file.write(f'\n{mode}')
-        
-        with open(data_file, 'a') as data_file:
-            for items in self.data_list:
-                data_file.write(f'\n{items}')
+        self.file = file_and_path.split('/')[-1] # Getting the file name
+
+        self.path = file_and_path.split(self.file)[0] # Getting the path
 
 
-
-
-if __name__ == '__main__':
+if __name__ == '__main__': 
     add_mode = add_mode()
     add_mode.add_programs()
+
+""" --- End Of App ---"""

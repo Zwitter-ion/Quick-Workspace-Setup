@@ -1,43 +1,35 @@
-from kivy.lang import Builder
-from kivy.app import App
-from kivy.uix.widget import Widget
+""" ---Importing Modules--- """
+from kivy.lang import Builder # For the kv file 
+from kivy.app import App # For the main app
+from kivy.uix.widget import Widget # For  the widgets
+import os # For the file system and other stuff
+from functools import cache # For the cache function
 
-Builder.load_string('''
-<Main>
-    BoxLayout:
-        size: root.width, root.height
-        orientation: 'vertical'
-        spacing: 10
-        padding: 30
-        id: text
-        cols: 1
-        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-        Label:
-            text: 'Please reopen the app for the changes to take effect'
-            font_name: "Comic"
-            color: [0.41, 0.42, 0.74, 1]
-            font_size: 30
-        Button:
-            text: 'Exit'
-            on_press: root.reopen()
-            color: [0.41, 0.42, 0.74, 1]
-            font_name: 'Comic'
-            font_size: 20
-        '''
-)
+""" ---Setting Class For Executing The Programs--- """
+Builder.load_file('Reopen.kv') # Loading the kv file
 
-class Main(Widget):
+class Main(Widget): # The main class
 
-    def reopen(self):
+    @cache  # Caching the function
 
-        os._exit(0)
+    def reopen(self): # The reopen function
+
+        os._exit(0) # Exiting the app
 
 
-class Reopen(App):
-    def build(self):
-        self.icon = 'Img\Icon.ico'
-        return Main()
+class Reopen(App): # The launcher class
+
+    @cache  # Caching the function
+
+    def build(self): # The build function
+
+        self.icon = 'Img\Icon.ico' # Setting the icon
+
+        return Main() # Returning the main class
 
 
-if  __name__ == '__main__':
-    Reopen().run()
+if  __name__ == '__main__': # If the program is called directly
+
+    Reopen().run() # Running the main app
+
+""" --- End Of App ---"""
