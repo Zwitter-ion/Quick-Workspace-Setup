@@ -4,11 +4,11 @@ from kivy.app import App  # For the main app
 from kivy.lang import Builder  # For the kv file
 from kivy.uix.button import Button  # For the buttons
 from kivy.uix.widget import Widget  # For the widgets
-from Run import Start_App  # For the start app function
+from System.Run import Start_App  # For the start app function
 from functools import cache # For the cache function
 
 """ ---Setting Class For Executing The Programs--- """
-Builder.load_file('Core.kv')  # Loading the kv file
+Builder.load_file('System\\Kivy_Files\\Core.kv')  # Loading the kv file
 
 class Main(Widget):  # The main class
 
@@ -43,7 +43,7 @@ class Main(Widget):  # The main class
 
     def add_mode(self):  # The add mode function
 
-        os.system('Add_gui.py')  # Calling the add gui file
+        os.system('System\\Add_gui.py')  # Calling the add gui file
 
         os._exit(0)  # Exiting the program
 
@@ -55,6 +55,8 @@ class Quick_Workspace_Setup(App):  # The launcher class
     def build(self):  # The build function
 
         self.icon = 'Img\Icon.ico'  # Setting the icon
+
+        self.title = 'Quick Workspace Setup'  # Setting the title
 
         return Main()  # Returning the main class
 

@@ -6,7 +6,7 @@ import os # For the file system and other stuff
 from functools import cache # For the cache function
 
 """ ---Setting Class For Executing The Programs--- """
-Builder.load_file('Reopen.kv') # Loading the kv file
+Builder.load_file('Kivy_Files\\Reopen.kv') # Loading the kv file
 
 class Main(Widget): # The main class
 
@@ -24,6 +24,8 @@ class Reopen(App): # The launcher class
     def build(self): # The build function
 
         self.icon = 'Img\Icon.ico' # Setting the icon
+
+        self.title = 'Reopen' # Setting the title
 
         return Main() # Returning the main class
 

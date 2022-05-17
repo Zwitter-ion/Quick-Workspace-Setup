@@ -11,7 +11,7 @@ from functools import cache  # For the cache function
 
 
 """ ---Setting Class For Executing The Programs--- """
-Builder.load_file('Add_gui.kv')  # Loading the kv file
+Builder.load_file('Kivy_Files\\Add_gui.kv')  # Loading the kv file
 
 class add(Widget):  # The main class
 
@@ -35,17 +35,9 @@ class add(Widget):  # The main class
 
         self.data_list = []  # Creating a list for the data
 
-    @cache  # Caching the function
+    #Not caching the function as it is causing a bug
 
-    def press_add_mode(self):  # The add mode function
-
-        Add_mode = add_mode()  # Calling the add mode function
-
-        Add_mode.add_programs()  # Calling the add programs function
-
-        self.file = Add_mode.file  # Getting the file
-
-        self.path = Add_mode.path  # Getting the path
+    def paste_files(self): # The paste files function
 
         self.data = f'{self.path} | {self.file}'  # Creating the data
 
@@ -55,9 +47,9 @@ class add(Widget):  # The main class
         self.path_text = Label(text=self.path, color=[0.41, 0.42, 0.74, 1], font_size=20,
                                font_name='Comic')  # Creating the path text
 
-        self.ids.grid.add_widget(self.path_text)  # Adding the path text to the grid
+        self.ids.grid.add_widget(self.path_text) # Adding the path text to the grid
 
-        self.ids.grid.add_widget(self.file_text)  # Adding the file text to the grid
+        self.ids.grid.add_widget(self.file_text) # Adding the file text to the grid
 
         self.data_list.append(self.data)  # Appending the data to the list
 
@@ -68,6 +60,24 @@ class add(Widget):  # The main class
         else:  # If the list is not empty
 
             App.get_running_app().root.ids.save.disabled = False  # Enabling the save button
+
+    #Not caching the function as it is causing a bug
+
+    def press_add_mode(self):  # The add mode function
+
+        self.Add_mode = add_mode()  # Calling the add mode function
+
+        self.Add_mode.add_programs()  # Calling the add programs function
+
+        self.file = self.Add_mode.file  # Getting the file
+
+        self.path = self.Add_mode.path  # Getting the path
+
+        add.paste_files(self)  # Calling the paste files function
+
+        self.Add_mode = None  # Deleting the add mode function
+
+
 
     @cache  # Caching the function
 
@@ -111,7 +121,7 @@ class add(Widget):  # The main class
 
                 data_file.write(f'{items}\n')  # Writing the data to the file
 
-        os.system('prompt_reopen.py')  # Reopening the program
+        os.system('System\\prompt_reopen.py')  # Reopening the program
 
         os._exit(0)  # Exiting the program
 
@@ -123,6 +133,8 @@ class Add_Mode(App):  # The load class
     def build(self):  # The build function
 
         self.icon = 'Img\Icon.ico'  # Setting the icon
+
+        self.title = 'Add Mode'  # Setting the title
 
         return add()  # Returning the add class
 
