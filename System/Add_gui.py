@@ -6,7 +6,7 @@ from kivy.lang import Builder  # For the kv file
 from kivy.uix.label import Label  # For the labels
 from kivy.uix.button import Button  # For the buttons
 from kivy.uix.textinput import TextInput  # For the text inputs
-import os  # For the file system and other stuff
+from os import system, _exit # For the exit function and run the command
 from functools import cache  # For the cache function
 
 
@@ -121,9 +121,9 @@ class add(Widget):  # The main class
 
                 data_file.write(f'{items}\n')  # Writing the data to the file
 
-        os.system('System\\prompt_reopen.py')  # Reopening the program
+        system('System\\prompt_reopen.py')  # Reopening the program
 
-        os._exit(0)  # Exiting the program
+        _exit(0)  # Exiting the program
 
 
 class Add_Mode(App):  # The load class

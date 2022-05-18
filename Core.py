@@ -1,10 +1,10 @@
 """ ---Importing Modules--- """
-import os  # For the file system and other stuff
 from kivy.app import App  # For the main app
 from kivy.lang import Builder  # For the kv file
 from kivy.uix.button import Button  # For the buttons
 from kivy.uix.widget import Widget  # For the widgets
 from System.Run import Start_App  # For the start app function
+from os import system, _exit  # For the exit function and run the command
 from functools import cache # For the cache function
 
 """ ---Setting Class For Executing The Programs--- """
@@ -43,9 +43,9 @@ class Main(Widget):  # The main class
 
     def add_mode(self):  # The add mode function
 
-        os.system('System\\Add_gui.py')  # Calling the add gui file
+        system('System\\Add_gui.py')  # Calling the add gui file
 
-        os._exit(0)  # Exiting the program
+        _exit(0)  # Exiting the program
 
 
 class Quick_Workspace_Setup(App):  # The launcher class

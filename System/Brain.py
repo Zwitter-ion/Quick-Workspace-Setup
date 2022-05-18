@@ -1,5 +1,5 @@
 """ ---Importing Modules--- """
-import os  # For directory changing
+from os import chdir, system # For the chdir and system functions
 from functools import cache # For caching the functions
 
 
@@ -18,9 +18,9 @@ class Run_App:  # Class for running the app
 
     def start_app(self):  # Method for starting the app
 
-        os.chdir(self.path)  # Changing the directory to the path
+        chdir(self.path)  # Changing the directory to the path
         
-        os.system(self.file)  # Running the file
+        system(self.file)  # Running the file
 
 
 """ --- End Of App ---"""
