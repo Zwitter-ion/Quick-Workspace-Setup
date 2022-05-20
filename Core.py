@@ -1,18 +1,19 @@
 """ ---Importing Modules--- """
+from time import time
 from kivy.app import App  # For the main app
 from kivy.lang import Builder  # For the kv file
 from kivy.uix.button import Button  # For the buttons
 from kivy.uix.widget import Widget  # For the widgets
 from System.Run import Start_App  # For the start app function
 from os import system, _exit  # For the exit function and run the command
-from functools import cache # For the cache function
+# from functools import cache # For the cache function
+# from numba import vectorize # For the vectorize function
 
 """ ---Setting Class For Executing The Programs--- """
 Builder.load_file('System\\Kivy_Files\\Core.kv')  # Loading the kv file
 
 class Main(Widget):  # The main class
 
-    @cache # Caching the function
 
     def __init__(self, **kwargs):  # The init function
 
@@ -39,8 +40,6 @@ class Main(Widget):  # The main class
 
             print(error)  # Printing the error
 
-    @cache  # Caching the function
-
     def add_mode(self):  # The add mode function
 
         system('System\\Add_gui.py')  # Calling the add gui file
@@ -50,7 +49,6 @@ class Main(Widget):  # The main class
 
 class Quick_Workspace_Setup(App):  # The launcher class
 
-    @cache  # Caching the function
 
     def build(self):  # The build function
 
@@ -64,5 +62,7 @@ class Quick_Workspace_Setup(App):  # The launcher class
 if __name__ == '__main__':  # If the program is called directly
 
     Quick_Workspace_Setup().run()  # Running the main app
+
+    print(time())  # Printing the time taken to run the program
 
 """ --- End Of App ---"""

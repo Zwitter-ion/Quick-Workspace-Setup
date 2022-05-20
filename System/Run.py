@@ -1,4 +1,5 @@
 """ ---Importing The Modules--- """
+import  os.path
 from os import _exit, path, getcwd  # For getting the path and exiting the program
 from System.Brain import Run_App  # For running the app
 from functools import cache # For caching the functions
@@ -17,7 +18,7 @@ class Start_App():  # Class for starting the app
 
         path = getcwd() + f'\Data\\{mode_name}.qes'  # Setting the path
 
-        if not path.exists(path):  # If the path doesn't exist
+        if not os.path.exists(path):  # If the path doesn't exist
 
             print("FILE DOESN'T EXIST!!!")  # Printing the message
 
