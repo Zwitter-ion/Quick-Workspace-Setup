@@ -1,4 +1,5 @@
 """ ---Importing Modules--- """
+from concurrent.futures import thread
 from Add import add_mode  # For the add mode function
 from kivy.app import App  # For the main app
 from kivy.uix.widget import Widget  # For the widgets
@@ -8,12 +9,13 @@ from kivy.uix.button import Button  # For the buttons
 from kivy.uix.textinput import TextInput  # For the text inputs
 from os import system, _exit # For the exit function and run the command
 from functools import cache  # For the cache function
+from threading import * # For the threading module
 
 
 """ ---Setting Class For Executing The Programs--- """
 Builder.load_file('Kivy_Files\\Add_gui.kv')  # Loading the kv file
 
-class add(Widget):  # The main class
+class add(Widget, Thread):  # The main class
 
     @cache # Caching the function
 
@@ -135,6 +137,8 @@ class Add_Mode(App):  # The load class
         self.icon = 'Img\Icon.ico'  # Setting the icon
 
         self.title = 'Add Mode'  # Setting the title
+
+        add().start()  # Starting the add function
 
         return add()  # Returning the add class
 

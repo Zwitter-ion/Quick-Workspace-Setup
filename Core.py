@@ -6,13 +6,12 @@ from kivy.uix.button import Button  # For the buttons
 from kivy.uix.widget import Widget  # For the widgets
 from System.Run import Start_App  # For the start app function
 from os import system, _exit  # For the exit function and run the command
-# from functools import cache # For the cache function
-# from numba import vectorize # For the vectorize function
+from threading import *
 
 """ ---Setting Class For Executing The Programs--- """
 Builder.load_file('System\\Kivy_Files\\Core.kv')  # Loading the kv file
 
-class Main(Widget):  # The main class
+class Main(Widget, Thread):  # The main class
 
 
     def __init__(self, **kwargs):  # The init function
@@ -47,21 +46,23 @@ class Main(Widget):  # The main class
         _exit(0)  # Exiting the program
 
 
-class Quick_Workspace_Setup(App):  # The launcher class
+class Quick_Workspace_Setup(App, Thread):  # The launcher class
 
 
     def build(self):  # The build function
 
-        self.icon = 'Img\Icon.ico'  # Setting the icon
+        self.icon = 'Img\Icon_128.ico'  # Setting the icon
 
         self.title = 'Quick Workspace Setup'  # Setting the title
+
+        Main().start()  # Starting the main class
 
         return Main()  # Returning the main class
 
 
 if __name__ == '__main__':  # If the program is called directly
 
-    Quick_Workspace_Setup().run()  # Running the main app
+    Quick_Workspace_Setup().start()  # Running the main app
 
     print(time())  # Printing the time taken to run the program
 
