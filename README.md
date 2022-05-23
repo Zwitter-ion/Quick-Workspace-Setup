@@ -2,12 +2,12 @@
 <body>
 
 
-# < --- Quick Env Setup --- >
+# < --- Quick Workspace Setup --- >
 
 
-## ->What is QES?
+## ->What is QWS?
 > 
-> QES is a simple software that can execute your favourite programs and apps with a single click!
+> QWS is a simple software that can execute your favourite programs and apps with a single click!
 
 ## ->Ready to be used?
 > The programme is still being developed, and we hope to release the first version soon.

@@ -1,3 +1,22 @@
+#: import Factory kivy.factory.Factory
+<PopUp@Popup>
+    auto_dismiss: False
+    size_hint: 0.5, 0.5
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+    title: 'New mode save!'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Please reopen the app for the changes to take effect'
+            font_size: 15
+            color: [0.41, 0.42, 0.74, 1]
+            font_name: 'Comic'
+        Button:
+            text: 'Exit'
+            on_press: exit()
+            background_normal: ''
+            color: [0.41, 0.42, 0.74, 1]
+            font_name: 'Comic'     
 <add>:
     BoxLayout:
         size: root.width, root.height
