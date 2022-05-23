@@ -1,4 +1,5 @@
 #: import Factory kivy.factory.Factory
+#: import _exit os._exit
 <PopUp@Popup>
     auto_dismiss: False
     size_hint: 0.5, 0.5
@@ -13,7 +14,7 @@
             font_name: 'Comic'
         Button:
             text: 'Exit'
-            on_press: exit()
+            on_press: _exit(0)
             background_normal: ''
             color: [0.41, 0.42, 0.74, 1]
             font_name: 'Comic'     

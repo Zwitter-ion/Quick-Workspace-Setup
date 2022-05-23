@@ -1,6 +1,6 @@
 """ ---Importing Modules--- """
 import os.path # For getting the path and exiting the program
-from os import chdir, path, getcwd, _exit # For the chdir and other functions
+from os import chdir, path, getcwd, _exit, system # For the chdir and other functions
 from kivy.app import App  # For the main app
 from kivy.lang import Builder  # For the kv file
 from kivy.uix.button import Button  # For the buttons
@@ -35,6 +35,8 @@ class Start_App():  # Class for starting the app
             with open(path, 'r') as data_file:  # Opening the data file
 
                 info = data_file.readlines()  # Reading the data file
+
+                info.append(info[-1])  # Adding the first line to the end of the list
 
                 for apps in info:  # For each app in the data file
 
@@ -77,7 +79,7 @@ class Main(Widget, Thread):  # The main class
 
     def add_mode(self):  # The add mode function
 
-        Popen('System\\Add_gui.py', shell=True)  # Calling the add gui file
+        system('System\\Add_gui.exe')  # Calling the add gui file
 
         _exit(0)  # Exiting the program
 

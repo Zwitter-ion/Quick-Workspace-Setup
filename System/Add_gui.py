@@ -105,7 +105,7 @@ class add(Widget):  # The main class
     @cache  # Caching the function
     def save_to_file(self):  # The save to file function
 
-        with open('Data//Mode_list.qws', 'a') as file:  # Opening the file
+        with open('//System//Data//Mode_list.qws', 'a') as file:  # Opening the file
 
             mode_name = self.mode_name.text  # Getting the mode name
 
@@ -113,7 +113,7 @@ class add(Widget):  # The main class
 
             print('added name')  # Printing the added name
 
-        with open(f'Data//{mode_name}.qws', 'a') as data_file:  # Opening the file
+        with open(f'//System//Data//{mode_name}.qws', 'a') as data_file:  # Opening the file
 
             for items in self.data_list:  # For each item in the list
 
@@ -125,7 +125,7 @@ class Add_Mode(App):  # The load class
     @cache  # Caching the function
     def build(self):  # The build function
 
-        self.icon = 'Img\Icon.ico'  # Setting the icon
+        self.icon = 'Img\Icon_128.ico'  # Setting the icon
 
         self.title = 'Add Mode'  # Setting the title
 
