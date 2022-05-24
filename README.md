@@ -1,9 +1,4 @@
-
-<body>
-
-
 # < --- Quick Workspace Setup --- >
-
 
 ## ->What is QWS?
 > 
@@ -13,10 +8,7 @@
 > The programme is still being developed, and we hope to release the first version soon.
 
 ## ->Authors
-
 > [@parth25sareen](https://github.com/parth25sareen)
 
-
-
-
-</body>
+## -> License
+> [This software is distributed under the MIT License](LICENSE)
