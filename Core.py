@@ -1,19 +1,23 @@
 """ ---Importing Modules--- """
-import os.path # For getting the path and exiting the program
-from os import chdir, path, getcwd, _exit, system # For the chdir and other functions
+import os.path  # For getting the path and exiting the program
+from os import chdir, getcwd, _exit, system  # For the chdir and other functions
 from kivy.app import App  # For the main app
 from kivy.lang import Builder  # For the kv file
 from kivy.uix.button import Button  # For the buttons
 from kivy.uix.widget import Widget  # For the widgets
 from threading import Thread  # For threading
-from functools import cache # For caching
-from subprocess import Popen # For the popen function
+from functools import cache  # For caching
+from subprocess import Popen  # For the popen function
 
 """ ---Setting Class For Executing The Programs--- """
 Builder.load_file('System\\Kivy_Files\\Core.kv')  # Loading the kv file
 
 
-class Start_App():  # Class for starting the app
+class Start_App:  # Class for starting the app
+
+    def __init__(self):
+        self.file = None
+        self.path = None
 
     @cache  # Caching the function
     def verify_data_files(self, mode):  # Method for verifying the data files
@@ -40,7 +44,7 @@ class Start_App():  # Class for starting the app
 
                 for apps in info:  # For each app in the data file
 
-                    apps = apps.split(' | ') # Splitting the path and file into a list
+                    apps = apps.split(' | ')  # Splitting the path and file into a list
 
                     self.path = apps[0]  # Setting the path
 
@@ -52,8 +56,8 @@ class Start_App():  # Class for starting the app
 
                 _exit(0)  # Exiting the program
 
-class Main(Widget, Thread):  # The main class
 
+class Main(Widget, Thread):  # The main class
 
     def __init__(self, **kwargs):  # The init function
 
@@ -67,9 +71,12 @@ class Main(Widget, Thread):  # The main class
 
                 for items in self.modes:  # Looping through the list
 
-                    self.button = Button(text=str(items), background_color=(200, 200, 200, 1), background_normal='', font_name="Comic", font_size=20, color=[0.41, 0.42, 0.74, 1])  # Creating the button
+                    self.button = Button(text=str(items), background_color=(200, 200, 200, 1), background_normal='',
+                                         font_name="Comic", font_size=20,
+                                         color=[0.41, 0.42, 0.74, 1])  # Creating the button
 
-                    self.button.bind(on_press=lambda x: Start_App().verify_data_files(items))  # when the button is clicked
+                    self.button.bind(
+                        on_press=lambda x: Start_App().verify_data_files(items))  # when the button is clicked
 
                     self.ids.grid.add_widget(self.button)  # added to the grid
 
@@ -77,7 +84,8 @@ class Main(Widget, Thread):  # The main class
 
             print(error)  # Printing the error
 
-    def add_mode(self):  # The add mode function
+    @staticmethod
+    def add_mode():  # The add mode function
 
         system('System\\Add_gui.exe')  # Calling the add gui file
 
@@ -85,7 +93,6 @@ class Main(Widget, Thread):  # The main class
 
 
 class Quick_Workspace_Setup(App, Thread):  # The launcher class
-
 
     def build(self):  # The build function
 

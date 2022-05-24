@@ -1,6 +1,17 @@
+#: import Factory kivy.factory.Factory
+<Dismiss@Popup>
+    auto_dismiss: True
+    size_hint: 0.5, 0.5
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+    title: 'Loading...'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Please wait a moment while the app loads'
+            font_size: 15
+            color: [0.41, 0.42, 0.74, 1]
+            font_name: 'Comic'
 <Main>:
-
-    
     BoxLayout:
         size: root.width, root.height
         cols: 1
@@ -21,8 +32,7 @@
                 font_size: 30
                 color: [0.41, 0.42, 0.74, 1]
                 font_name: 'Comic'
-                size_hint: 1, .85
-            
+                size_hint: 1, .85         
         BoxLayout:
             orientation: 'horizontal'
             size: root.width, root.height
@@ -34,7 +44,8 @@
             pos_hint: {'center_x': .5, 'center_y': .5}
             Button:
                 text: 'Add Mode'
-                on_press: root.add_mode()
+                on_press: Factory.Dismiss().open()
+                on_release: root.add_mode()
                 background_normal: ''
                 background_color: [200,200,200,1]
                 color: [0.41, 0.42, 0.74, 1]
