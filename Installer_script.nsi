@@ -20,7 +20,6 @@ OutFile "install.exe"
 InstallDir "$PROGRAMFILES\Quick Workspace Setup"
 InstallDirRegKey HKCU "Software\QWS\Quick_Workspace_Setup" ""
 RequestExecutionLevel admin ; user|highest|admin
-!finalize 'sign.bat "%1" "Quick Workspace Setup" https://github.com/parth25sareen/Quick-Workspace-Setup'
 
 ;-------------------------------------------------------------------------------
 ; Version Info
