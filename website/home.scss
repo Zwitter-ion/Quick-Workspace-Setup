@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+body{
+    background: url('./static/Background.png') center center fixed no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+}
+.banner{
+    width: 99.75vw;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .banner_image{
+        margin-top: calc(2.5vh + 2.5vh);
+        width: calc(30vh + 30vw);
+        opacity: 0;
+    }
+    .banner_text{
+        width: 75%;
+        font-size: calc(1.5vh + 1.5vh);
+        text-align: center;
+        color: white;
+    }
+
+}
+.page_1{
+    height: fit-content;
+    max-width: 99.75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: calc(2.5vh + 2.5vh);
+    .page_1_text{
+        width: 75%;
+        font-size: calc(1.5vh + 1.5vh);
+        text-align: center;
+        color: white;
+        padding-bottom: 2.5%;
+    }
+    .preview{
+        width: 95%;
+    }
+}
+.download{
+    width: 100%;
+    height: max-content;
+    padding-top: calc(5vh + 5vh);
+    padding-bottom: calc(6vh + 6vh);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .button{
+            border: none;
+            width: fit-content;
+            font-size: calc(1vh + 1vh);
+            margin-top: calc(.5vh + .5vh);
+            margin-bottom: calc(.5vh + .5vh);
+            color: black;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: calc(1vh + 1vw);
+            border-radius: calc(.5vh + .5vw) ;
+            text-decoration: none;
+        }
+}
+.repo{
+    width: 100%;
+    height: max-content;
+    padding-top: calc(5vh + 5vh);
+    padding-bottom: calc(5vh + 5vh);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .repo_text{
+        width: 75%;
+        font-size: calc(1.5vh + 1.5vh);
+        text-align: center;
+        color: white;
+        padding-bottom: 2.5%;
+    }
+    .github_link{
+    text-decoration: none;
+    color: white;
+}
+}
+.copy_right{
+    bottom: 0;
+    color: white;
+    font-size: calc(1vh + 1vh);
+    text-align: center;
+
+
+    .user{
+        color: #efefef;
+        font-style: italic;
+        text-decoration: none;
+    }
+}
