@@ -40,7 +40,7 @@ BrandingText "${PRODUCT_NAME} ${PRODUCT_VERSION}"
 
 ;-------------------------------------------------------------------------------
 ; Installer Pages
-!insertmacro MUI_PAGE_LICENSE ".\License.txt"
+!insertmacro MUI_PAGE_LICENSE ".\LICENSE"
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
