@@ -23,4 +23,4 @@ Quick Workspace Setup is an application that allows you to save your favourite p
 [@VikranthMaster](https://github.com/VikranthMaster)
 
 ## -> License
-[This software is distributed under the MIT License](LICENSE.txt)
+[This software is distributed under the MIT License](LICENSE)
