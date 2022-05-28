@@ -1,8 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo('.banner_image', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.banner_image', toggleActions: 'restart none none none'}, duration: 1.5, opacity: 1, y: 0,});
 gsap.fromTo('.banner_text', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.banner_text', toggleActions: 'restart none none none'}, delay: 1, duration: 1.5, opacity: 1, y: 25});
-gsap.fromTo('.page_1_text', {opacity: 0, y:25}, {scrollTrigger: {trigger: '.page_1_text', toggleActions: 'restart none none none'}, duration: 1, opacity: 1, y: 0});
+gsap.fromTo('.page_1_text', {opacity: 0, y:25}, {scrollTrigger: {trigger: '.page_1_text', toggleActions: 'restart none none none'}, delay: 2, duration: 1, opacity: 1, y: 0});
 gsap.fromTo('.preview', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.preview', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
+gsap.fromTo('.diff', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.diff', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
+gsap.fromTo('.diff_title', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.diff_title', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
+gsap.fromTo('.diff_text', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.diff_text', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
 gsap.fromTo('.download_title', {opacity: 0, y:25}, {scrollTrigger: {trigger: '.download_title', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
 gsap.fromTo('.button', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.button', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});
 gsap.fromTo('.os_name', {opacity: 0, y:50}, {scrollTrigger: {trigger: '.os_name', toggleActions: 'restart none none none'}, duration: 1, delay: .25, opacity: 1, y: 0});

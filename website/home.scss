@@ -35,13 +35,39 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: calc(2.5vh + 2.5vh);
+    // padding-bottom: calc(2.5vh + 2.5vh);
+    margin-bottom: calc(10vh + 10vh);
     .page_1_text{
         width: 75%;
         font-size: calc(1.5vh + 1.5vh);
         text-align: center;
         color: white;
         padding-bottom: 2.5%;
+    }
+    .preview{
+        width: 95%;
+    }
+}
+.diff{
+    font-family: 'Comic Neue', cursive;
+    height: fit-content;
+    max-width: 99.75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: calc(2.5vh + 2.5vh);
+    .diff_title{
+        width: 75%;
+        font-size: calc(2vh + 2vh);
+        text-align: center;
+        color: white;
+        padding-bottom: 2.5%;
+    }
+    .diff_text{
+        width: 75%;
+        font-size: calc(1vh + 1vh);
+        text-align: center;
+        color: white;
     }
     .preview{
         width: 95%;
