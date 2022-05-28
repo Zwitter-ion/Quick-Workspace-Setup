@@ -25,9 +25,9 @@
 
 ## Download
 
-> Download the latest version of QWS from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/489352346/37d99ebc-1dc0-4de9-a996-8bbb5daab199?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220528%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220528T093256Z&X-Amz-Expires=300&X-Amz-Signature=986d7ac69202bb3625ed8414c6b67b403d3af3ed1aeb94b864c7764da954fe1a&X-Amz-SignedHeaders=host&actor_id=66111742&key_id=0&repo_id=489352346&response-content-disposition=attachment%3B%20filename%3DQWS.Installer.exe&response-content-type=application%2Foctet-stream).
+> Download the latest version of QWS from [here](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/download/v1.0.0/QWS.Installer.exe).
 >
-> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.0)
+> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.0)
 
 ## Authors
 >[@parth25sareen](https://github.com/parth25sareen)
