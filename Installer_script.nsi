@@ -16,7 +16,7 @@
 ;-------------------------------------------------------------------------------
 ; Attributes
 Name "Quick Workspace Setup"
-OutFile "install.exe"
+OutFile "QWS Installer.exe"
 InstallDir "$PROGRAMFILES\Quick Workspace Setup"
 InstallDirRegKey HKCU "Software\QWS\Quick_Workspace_Setup" ""
 RequestExecutionLevel admin ; user|highest|admin
