@@ -10,6 +10,7 @@
 ![](https://img.shields.io/github/languages/count/parth25sareen/quick-workspace-setup?logo=9cf&style=for-the-badge)
 ![](https://img.shields.io/github/pipenv/locked/python-version/parth25sareen/quick-workspace-setup?color=yellow&style=for-the-badge)
 ![](https://img.shields.io/github/repo-size/parth25sareen/quick-workspace-setup?color=success&style=for-the-badge)
+![](https://img.shields.io/github/workflow/status/parth25sareen/quick-workspace-setup/CodeQL?color=important&style=for-the-badge)
 
 ## What is QWS?
 
