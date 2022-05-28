@@ -37,4 +37,5 @@
 ## License
 >[This software is distributed under the MIT License](LICENSE)
 
-<!-- <script> window.location.replace('https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html');</script> -->
+## Webpage scripts
+<script> window.location.replace('https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html');</script>
