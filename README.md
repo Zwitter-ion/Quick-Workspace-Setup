@@ -23,6 +23,10 @@
 ## Motivation
 > Quick Workspace Setup is an app created with the intention of making the day-to-day work flow of creative individuals easier. The QWS Software Foundation wishes to maintain the QWS open source and has no plans to monetise it. QWS was designed with the user's privacy in mind, therefore it does not disclose any information online with any third party and can also run offline.
 
+## Flow chart
+
+>![](./Img/Flow_chart.png)
+
 ## Download
 
 > Download the latest version of QWS from [here](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/download/v1.0.0/QWS.Installer.exe).
