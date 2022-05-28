@@ -7,6 +7,7 @@ body{
     font-family: 'Comic Neue', cursive;
 }
 .banner{
+    font-family: 'Comic Neue', cursive;
     width: 99.75vw;
     height: 95vh;
     align-items: center;
@@ -28,6 +29,7 @@ body{
 
 }
 .page_1{
+    font-family: 'Comic Neue', cursive;
     height: fit-content;
     max-width: 99.75vw;
     display: flex;
@@ -46,6 +48,7 @@ body{
     }
 }
 .download{
+    font-family: 'Comic Neue', cursive;
     width: 100%;
     height: max-content;
     padding-top: calc(5vh + 5vh);
@@ -68,6 +71,7 @@ body{
         }
 }
 .repo{
+    font-family: 'Comic Neue', cursive;
     width: 100%;
     height: max-content;
     padding-top: calc(5vh + 5vh);
@@ -84,11 +88,13 @@ body{
         padding-bottom: 2.5%;
     }
     .github_link{
+        font-family: 'Comic Neue', cursive;
     text-decoration: none;
     color: white;
 }
 }
 .copy_right{
+    font-family: 'Comic Neue', cursive;
     bottom: 0;
     color: white;
     font-size: calc(1vh + 1vh);
@@ -96,8 +102,7 @@ body{
 
 
     .user{
-        color: #efefef;
-        font-style: italic;
+        color: #727272;
         text-decoration: none;
     }
 }
