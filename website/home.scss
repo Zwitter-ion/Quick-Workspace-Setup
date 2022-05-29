@@ -119,6 +119,13 @@ body{
             border-radius: calc(.5vh + .5vw) ;
             text-decoration: none;
         }
+    .Note{
+        width: 75%;
+        color: red;
+        font-size: calc(1.15vh + 1.15vh);
+        text-align: center;
+        font-style: italic;
+    }
 }
 .repo{
     font-family: 'Comic Neue', cursive;

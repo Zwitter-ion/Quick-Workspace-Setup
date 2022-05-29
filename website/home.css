@@ -180,6 +180,14 @@ body {
   text-decoration: none;
 }
 
+.download .Note {
+  width: 75%;
+  color: red;
+  font-size: calc(1.15vh + 1.15vh);
+  text-align: center;
+  font-style: italic;
+}
+
 .repo {
   font-family: 'Comic Neue', cursive;
   width: 100%;
