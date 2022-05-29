@@ -40,8 +40,6 @@ class Start_App:  # Class for starting the app
 
                 info = data_file.readlines()  # Reading the data file
 
-                info.append(info[-1])  # Adding the first line to the end of the list
-
                 for apps in info:  # For each app in the data file
 
                     apps = apps.split(' | ')  # Splitting the path and file into a list

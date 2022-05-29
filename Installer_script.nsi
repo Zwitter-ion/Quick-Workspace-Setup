@@ -9,9 +9,9 @@
 ; Constants
 !define PRODUCT_NAME "Quick Workspace Setup" 
 !define PRODUCT_DESCRIPTION "Save a few clicks by using the Quick Workspace Setup"
-!define COPYRIGHT "Copyright © 2022 Parth Sareen"
-!define PRODUCT_VERSION "1.0.0.0"
-!define SETUP_VERSION 1.0.0.0
+!define COPYRIGHT "Copyright © 2022 QWS Software Foundation"
+!define PRODUCT_VERSION "1.0.1.0"
+!define SETUP_VERSION 1.0.1.0
 
 ;-------------------------------------------------------------------------------
 ; Attributes
