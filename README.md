@@ -26,7 +26,7 @@
 
 ## Flow chart
 
->![](./Img/Flow_chart.png)
+>![](./Img/Wireframe.png)
 
 ## Download
 
