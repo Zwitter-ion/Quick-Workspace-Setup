@@ -34,7 +34,7 @@
 >
 > #### <b style='color: red'> _Note: When attempting to install it, please allow the installer to run as administrator, and when downloading, your browser may prompt unusual file because it has not been downloaded by many people_ </b>
 
-## <h1 style='color: #6366b7'> Creators </h1>
+## <h1 style='color: #6366b7'> Creator and Contributors </h1>
 >[@parth25sareen](https://github.com/parth25sareen)
 > 
 >[@VikranthMaster](https://github.com/VikranthMaster)
