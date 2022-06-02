@@ -12,7 +12,7 @@
 
 ## <h1 style='color: #6366b7'> What is QWS? </h1>
 
-> Quick Workspace Setup is an application that allows you to save your favourite programmes and files in a customised mode so that you may launch them all at once with a single click the next time!
+> Quick Workspace Setup or QWS in short is an application that allows you to save your favourite programmes and files in a customised mode so that you may launch them all at once with a single click the next time!
 
 ## <h1 style='color: #6366b7'> Some Screen Shots of the app </h1>
 
