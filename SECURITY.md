@@ -9,4 +9,4 @@
 > ### We will attempt to repair the vulnerability and distribute it in the next patch, along with a response to the email address provided by the cooresponding user through form.
 
 # Preferred Languages
-> We prefer all communications to be in English.
+> We prefer all communications to be in English only.

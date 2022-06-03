@@ -12,7 +12,7 @@
 
 ## <h1 style='color: #6366b7'> What is QWS? </h1>
 
-> Quick Workspace Setup is an application that allows you to save your favourite programmes and files in a customised mode so that you may launch them all at once with a single click the next time!
+> Quick Workspace Setup or QWS in short is an application that allows you to save your favourite programmes and files in a customised mode so that you may launch them all at once with a single click the next time!
 
 ## <h1 style='color: #6366b7'> Some Screen Shots of the app </h1>
 
@@ -32,9 +32,9 @@
 >
 > You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.1) 
 >
-> #### <b style='color: red'> _Note: When attempting to install it, please allow the installer to run as administrator, and when downloading, your browser may prompt unusual file because it has not been downloaded by many people_ </b>
+> #### <b style='color: red'> _Note: When attempting to install it, please allow the installer to run as administrator, and when downloading, your browser may prompt unusual file because it has not been downloaded by many people._ </b>
 
-## <h1 style='color: #6366b7'> Creators </h1>
+## <h1 style='color: #6366b7'> Creator and Contributors </h1>
 >[@parth25sareen](https://github.com/parth25sareen)
 > 
 >[@VikranthMaster](https://github.com/VikranthMaster)
