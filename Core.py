@@ -92,6 +92,20 @@ class Main(Widget, Thread):  # The main class
 
 class Quick_Workspace_Setup(App, Thread):  # The launcher class
 
+    def __init__(
+            self,
+            group: None = ...,
+            target: Callable[..., Any] | None = ...,
+            name: str | None = ...,
+            args: Iterable[Any] = ...,
+            kwargs: Mapping[str, Any] | None = ...,
+            *,
+            daemon: bool | None = ...,
+    ):
+        super().__init__(group, target, name, args, kwargs, null, daemon)
+        self.title = None
+        self.icon = None
+
     def build(self):  # The build function
 
         self.icon = 'Img\Icon_128.ico'  # Setting the icon
