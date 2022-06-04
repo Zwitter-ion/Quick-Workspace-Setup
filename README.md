@@ -30,7 +30,7 @@
 
 > Download the latest version of QWS from [here](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/download/v1.0.1/QWS.Installer.exe).
 >
-> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.1) 
+> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.1).
 >
 > #### <b style='color: red'> _Note: When attempting to install it, please allow the installer to run as administrator, and when downloading, your browser may prompt unusual file because it has not been downloaded by many people._ </b>
 
