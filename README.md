@@ -40,6 +40,6 @@
 >[@VikranthMaster](https://github.com/VikranthMaster)
 
 ## <h1 style='color: #6366b7'> License </h1>
-> [This software is distributed under the MIT License](LICENSE)
+> [This software is distributed under the MIT License.](LICENSE)
 
 </body>
