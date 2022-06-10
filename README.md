@@ -1,4 +1,4 @@
-![](./Img/Banner.png)
+![](./Img/Banner.webp)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/parth25sareen/Quick-Workspace-Setup?color=9cf&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/parth25sareen/Quick-Workspace-Setup?color=9cf&style=for-the-badge)
@@ -16,21 +16,21 @@
 
 ## <h1 style='color: #6366b7'> Some Screen Shots of the app </h1>
 
->![](./Img/Add_mode.png)
->![](./Img/Open_mode.png)
+>![](./Img/Add_mode.webp)
+>![](./Img/Open_mode.webp)
 
 ## <h1 style='color: #6366b7'> Motivation </h1>
 > Quick Workspace Setup is an app created with the intention of making the day-to-day work flow of creative individuals easier. The QWS Software Foundation wishes to maintain the QWS open source and has no plans to monetise it. QWS was designed with the user's privacy in mind, therefore it does not disclose any information online with any third party and can also run offline.
 
 ## <h1 style='color: #6366b7'> Wireframe </h1>
 
->![](./Img/Wireframe.png)
+>![](./Img/Wireframe.webp)
 
 ## <h1 style='color: #6366b7'> Download QWS</h1>
 
 > Download the latest version of QWS from [here](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/download/v1.0.1/QWS.Installer.exe).
 >
-> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.1) 
+> You may get the most recent version of QWS from our [website](https://parth25sareen.github.io/Quick-Workspace-Setup/website/home_1.0.html) or via [github releases](https://github.com/parth25sareen/Quick-Workspace-Setup/releases/tag/v1.0.1) 
 >
 > #### <b style='color: red'> _Note: When attempting to install it, please allow the installer to run as administrator, and when downloading, your browser may prompt unusual file because it has not been downloaded by many people._ </b>
 
