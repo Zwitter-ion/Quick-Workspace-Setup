@@ -1,5 +1,4 @@
 ![](./Img/Banner.webp)
-
 ![GitHub contributors](https://img.shields.io/github/contributors/parth25sareen/Quick-Workspace-Setup?color=9cf&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/parth25sareen/Quick-Workspace-Setup?color=9cf&style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/parth25sareen/Quick-Workspace-Setup?color=9cf&style=for-the-badge)
@@ -9,16 +8,13 @@
 ![](https://img.shields.io/github/pipenv/locked/python-version/parth25sareen/quick-workspace-setup?color=yellow&style=for-the-badge)
 ![](https://img.shields.io/github/repo-size/parth25sareen/quick-workspace-setup?color=success&style=for-the-badge)
 ![](https://img.shields.io/github/workflow/status/parth25sareen/quick-workspace-setup/CodeQL?color=important&style=for-the-badge)
-
 ## <h1 style='color: #6366b7'> What is QWS? </h1>
 
 > Quick Workspace Setup or QWS in short is an application that allows you to save your favourite programmes and files in a customised mode so that you may launch them all at once with a single click the next time!
-
 ## <h1 style='color: #6366b7'> Some Screen Shots of the app </h1>
 
 >![](./Img/Add_mode.webp)
 >![](./Img/Open_mode.webp)
-
 ## <h1 style='color: #6366b7'> Motivation </h1>
 > Quick Workspace Setup is an app created with the intention of making the day-to-day work flow of creative individuals easier. The QWS Software Foundation wishes to maintain the QWS open source and has no plans to monetise it. QWS was designed with the user's privacy in mind, therefore it does not disclose any information online with any third party and can also run offline.
 
