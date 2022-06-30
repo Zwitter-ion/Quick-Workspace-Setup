@@ -92,19 +92,13 @@ class Main(Widget, Thread):  # The main class
 
 class Quick_Workspace_Setup(App, Thread):  # The launcher class
 
-    def __init__(
-            self,
-            group: None = ...,
-            target: Callable[..., Any] | None = ...,
-            name: str | None = ...,
-            args: Iterable[Any] = ...,
-            kwargs: Mapping[str, Any] | None = ...,
-            *,
-            daemon: bool | None = ...,
-    ):
-        super().__init__(group, target, name, args, kwargs, null, daemon)
-        self.title = None
-        self.icon = None
+    def __init__(self): # The init function
+
+        super().__init__() # Calling the init function of the parent class
+
+        self.title = None  # Setting the title to None
+
+        self.icon = None # Setting the icon to None
 
     def build(self):  # The build function
 
