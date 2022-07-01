@@ -110,7 +110,6 @@ class Quick_Workspace_Setup(App, Thread):  # The launcher class
 
         return Main()  # Returning the main class
 
-
 if __name__ == '__main__':  # If the program is called directly
 
     Quick_Workspace_Setup().start()  # Running the main app
