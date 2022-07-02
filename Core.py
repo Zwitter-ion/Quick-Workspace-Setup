@@ -12,7 +12,6 @@ from subprocess import Popen  # For the popen function
 """ ---Setting Class For Executing The Programs--- """
 Builder.load_file('System\\Kivy_Files\\Core.kv')  # Loading the kv file
 
-
 class Start_App:  # Class for starting the app
 
     def __init__(self):
@@ -53,7 +52,6 @@ class Start_App:  # Class for starting the app
                     Popen(self.file, shell=True)  # Running the file
 
                 _exit(0)  # Exiting the program
-
 
 class Main(Widget, Thread):  # The main class
 
